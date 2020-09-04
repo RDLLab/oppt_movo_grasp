@@ -1,0 +1,10 @@
+#goal definition
+string[] object_names
+string[] support_names
+---
+#result definition
+moveit_msgs/CollisionObject[] objects
+moveit_msgs/CollisionObject[] supports
+---
+#feedback
+int32 status

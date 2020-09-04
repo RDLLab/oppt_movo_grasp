@@ -1,0 +1,8 @@
+# goal
+popcorn_oppt_ros_interface_msgs/OPPTObservation observation
+---
+# result
+popcorn_oppt_ros_interface_msgs/OPPTJointPositionAction action
+bool belief_updated
+---
+# feedback

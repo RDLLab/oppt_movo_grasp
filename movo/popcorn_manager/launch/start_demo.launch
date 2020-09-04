@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="popcorn_manager" type="demo_main.py"
+        name="popcorn_manager" output="screen">
+        <rosparam command="load" file="$(find popcorn_manager)/config/oppt_ros_interface_config.yaml"/>
+    </node>
+
+</launch>

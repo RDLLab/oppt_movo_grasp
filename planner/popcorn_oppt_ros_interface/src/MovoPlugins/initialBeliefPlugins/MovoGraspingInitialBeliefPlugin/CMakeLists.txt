@@ -1,0 +1,2 @@
+ADD_INITIAL_BELIEF_PLUGIN(movoGraspingInitialBeliefPlugin ${CMAKE_CURRENT_LIST_DIR}/MovoGraspingInitialBeliefPlugin.cpp)
+target_include_directories(movoGraspingInitialBeliefPlugin PRIVATE ${CMAKE_SOURCE_DIR}/popcorn_oppt_ros_interface/src/MovoPlugins/shared)

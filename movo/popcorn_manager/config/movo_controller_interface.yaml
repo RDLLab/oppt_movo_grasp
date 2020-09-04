@@ -1,0 +1,26 @@
+Initial Joint Values:
+  Head: [0, 0]
+  LefGripper: [0]
+  LeftArm: [0, 0, 0, 0, 0, 0, 0]
+  RightArm: [0, 0, 0, 0, 0, 0, 0]
+  RightGripper: [0]
+  Torso: [0.1]
+Joint Limits:
+  right_arm_half_joint: [-2.809, 2.809]
+  right_elbow_joint: [-2.809, 2.809]
+  right_shoulder_lift_joint: [-2.238, 2.238]
+  right_shoulder_pan_joint: [-3.141592653589793, 3.141592653589793]
+  right_wrist_3_joint: [-3.141592653589793, 3.141592653589793]
+  right_wrist_spherical_1_joint: [-3.141592653589793, 3.141592653589793]
+  right_wrist_spherical_2_joint: [-3.141592653589793, 3.141592653589793]
+Joint Names:
+  Head: [pan_joint, tilt_joint]
+  LefGripper: [left_gripper_finger1_joint]
+  LeftArm: [left_shoulder_pan_joint, left_shoulder_lift_joint, left_arm_half_joint,
+    left_elbow_joint, left_wrist_spherical_1_joint, left_wrist_spherical_2_joint,
+    left_wrist_3_joint]
+  RightArm: [right_shoulder_pan_joint, right_shoulder_lift_joint, right_arm_half_joint,
+    right_elbow_joint, right_wrist_spherical_1_joint, right_wrist_spherical_2_joint,
+    right_wrist_3_joint]
+  RightGripper: [right_gripper_finger1_joint]
+  Torso: [linear_joint]

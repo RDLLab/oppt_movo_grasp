@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<sdf version='1.6'>
+<world name='MovoGraspingEnvironment'>
+  
+   
+    <!-- Model of the table  -->
+    <model name="box1">
+        <pose frame=''>0.77 0.32 0.44 0.0 0 0</pose>
+        <static>1</static>
+        <link name="box1Link">
+        <visual name="box1Visual">
+          <geometry>
+            <box>
+              <size>0.62 0.92 0.88</size>
+            </box>
+          </geometry>
+          <material>          
+            <ambient>0.7 0.7 0.7 1.0</ambient>
+          </material>
+        </visual>
+        <collision name="box1Collision">
+          <geometry>
+            <box>
+              <size>0.62 100 0.88</size>
+            </box>
+          </geometry>               
+        </collision>
+      </link>
+    </model>
+
+
+ 
+	 <!-- Model of the Robot -->
+    <!--model name="MovoSevenDOF">
+      <static>false</static-->
+      <include>
+        <uri>model://MovoSevenDOF</uri>
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+      </include>
+      <joint name="fixed_to_ground_movo" type="fixed">
+        <parent>world</parent>
+        <child>MovoSevenDOF::base_link</child>        
+      </joint>
+    <!--/model-->
+
+
+
+
+    <!-- Model of the cylinder cup  -->
+    <model name="TargetObject">
+      <link name='cylinderLink'>
+          <pose>1 0 1 0 -0 0</pose>
+          <inertial>
+            <mass>0.2</mass>
+            <inertia>
+              <ixx>0.001258</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>0.001258</iyy>
+              <iyz>0</iyz>
+              <izz>0.000145</izz>
+            </inertia>
+          </inertial>
+          <collision name='objCollision'>
+            <geometry>
+              <cylinder>
+                <radius>0.0315</radius>
+                <length>0.135</length>         
+              </cylinder>
+            </geometry>
+          </collision>
+          <visual name='objVisual'>
+            <geometry>
+              <cylinder>
+                <radius>0.0315</radius>
+                <!-- small can -->
+                <length>0.135</length>            
+              </cylinder>
+            </geometry>          
+          </visual>
+    <!--       <visual name='objVisual2'>
+            <pose>0.0 0.0 0.07 0.0 0.0 0.0</pose>
+            <geometry>
+              <cylinder>
+                <radius>0.01302</radius>
+                <length>0.1425</length>
+              </cylinder>
+            </geometry>          
+          </visual> -->
+      </link>
+    </model>
+
+
+
+
+    
+   
+</world>
+</sdf>

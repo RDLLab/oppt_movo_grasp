@@ -1,0 +1,8 @@
+#goal
+bool goal
+---
+#result
+bool result
+---
+#feedback
+bool feedback

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="use_default_vision" default="true"/>
+    <arg name="static_table" default="false"/>
+    <arg name="sim" value="false"/>
+    <arg name="local" value="$(arg sim)"/>
+    <arg name="obj_loc_mode" value="kinect_tracking"/>
+
+     <group unless="$(arg static_table)">
+        <!-- Initial pose -->
+        <node pkg="popcorn_grasper" type="init_demo_pose.py" name="init_robot_pose" output="screen">
+            <param name="sim" value="$(arg sim)"/>
+        </node>
+    </group>
+
+     <!-- Rviz GUI -->
+    <node pkg="si_utils" type="timed_roslaunch"
+        args="6 popcorn_grasper rviz.launch"
+        name="rviz_bringup" output="screen"/>
+
+
+     <!-- Default vision module-->
+     <group if="$(arg use_default_vision)">
+         <!-- Tabletop object localization -->
+         <node pkg="si_utils" type="timed_roslaunch"
+            args="9 popcorn_vision tabletop_object_localization.launch sim:=$(arg sim) mode:=$(arg obj_loc_mode)"
+            name="obj_loc_bringup" output="screen"/>
+    </group>
+
+    <!-- Grasp planner -->
+    <node pkg="si_utils" type="timed_roslaunch"
+        args="13 popcorn_grasper grasp_estimator.launch sim:=$(arg sim)"
+        name="grasp_estimtor_bringup" output="screen"/>
+
+</launch>

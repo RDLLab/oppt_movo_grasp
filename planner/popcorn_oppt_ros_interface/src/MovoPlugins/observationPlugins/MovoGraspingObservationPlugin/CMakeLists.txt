@@ -1,0 +1,2 @@
+ADD_OBSERVATION_PLUGIN(movoGraspingObservationPlugin ${CMAKE_CURRENT_LIST_DIR}/MovoGraspingObservationPlugin.cpp)
+target_include_directories(movoGraspingObservationPlugin PRIVATE ${CMAKE_SOURCE_DIR}/popcorn_oppt_ros_interface/src/MovoPlugins/shared)

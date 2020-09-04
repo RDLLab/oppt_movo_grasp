@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+   
+   <node pkg="popcorn_oppt_ros_interface" name="oppt_ros_interface" type="popcorn_oppt_ros_interface_node" >
+   		<param name="problemConfigFile" value="$(find popcorn_oppt_ros_interface)/src/cfg/MovoDemo.cfg"/>
+   </node>
+   
+</launch>

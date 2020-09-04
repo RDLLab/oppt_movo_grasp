@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="sim"/>
+    <arg name="mode" default="kinect"/>
+
+    <node pkg="popcorn_vision" type="tabletop_object_localization"
+        name="tabletop_object_localizer" output="screen">
+        <param name="sim" value="$(arg sim)"/>
+        <param name="mode" value="$(arg mode)"/>
+        <param name="cloud_topic" value="/movo_camera/point_cloud/points"/>
+        <param name="base_frame" value="base_link"/>
+        <rosparam command="load" file="$(find popcorn_vision)/config/popcorn_tabletop_objects.yaml"/>
+        <rosparam command="load" file="$(find popcorn_vision)/config/self_filter.yaml" />
+    </node>
+
+
+</launch>

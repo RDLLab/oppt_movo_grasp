@@ -1,0 +1,26 @@
+{
+    "coco": {
+    	"graph": "ssd_v2_coco.pb",
+    	"labels": "mscoco_label_map.pbtxt"
+    },
+    "tube": {
+        "graph": "tube.pb",
+        "labels": "tube.pbtxt"
+    },
+    "robo_v0": {
+    	"graph": "robo_v0.pb",
+    	"labels": "robo_v0_label_map.pbtxt"
+    },
+    "robo_v1": {
+    	"graph": "robo_v1.pb",
+    	"labels": "robo_v1_label_map.pbtxt"
+    },
+    "tube_flickr32": {
+    	"graph": "tube_flickr32.pb",
+    	"labels": "tube_flickr32.pbtxt"
+    },
+    "ssdlite_tube": {
+    	"graph": "ssdlite_tube.pb",
+    	"labels": "tube.pbtxt"
+    }
+}

@@ -1,0 +1,3 @@
+ADD_TERMINAL_PLUGIN(movoGraspingTerminalPlugin ${CMAKE_CURRENT_LIST_DIR}/MovoGraspingTerminalPlugin.cpp)
+target_include_directories(movoGraspingTerminalPlugin PRIVATE ${CMAKE_SOURCE_DIR}/popcorn_oppt_ros_interface/src/MovoPlugins/shared)
+

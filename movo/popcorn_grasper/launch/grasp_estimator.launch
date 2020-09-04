@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="sim"/>
+    <arg name="joint_posture" default="0.58"/>
+
+    <node pkg="popcorn_grasper" type="grasp_estimator.py" name="grasp_estimator">
+        <param name="sim" value="$(arg sim)"/>
+        <param name="joint_posture" value="$(arg joint_posture)"/>
+        <!-- close_threshold values:
+        0.940: for pringles, merlocup
+        ? : for paper tube
+        -->
+        <!-- For original right hand hand -->
+        <!--param name="close_threshold" value="0.975"/-->
+        <!-- For swapped hand -->
+        <param name="close_threshold" value="0.940"/>
+    </node>
+
+</launch>

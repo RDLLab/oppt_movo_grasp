@@ -1,0 +1,8 @@
+#goal definition
+---
+#result definition
+geometry_msgs/PoseStamped box_pose
+std_msgs/Float64 candy_height
+---
+#feedback
+int32 status

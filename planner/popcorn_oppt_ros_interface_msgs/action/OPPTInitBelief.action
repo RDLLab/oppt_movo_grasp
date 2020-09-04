@@ -1,0 +1,8 @@
+# goal
+popcorn_oppt_ros_interface_msgs/OPPTState initial_state
+---
+# result
+bool belief_updated
+---
+# feedback
+bool status

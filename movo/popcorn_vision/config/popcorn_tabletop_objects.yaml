@@ -1,0 +1,41 @@
+# http://docs.ros.org/api/shape_msgs/html/msg/SolidPrimitive.html
+# uint8 type
+# uint8 BOX=1
+# uint8 SPHERE=2
+# uint8 CYLINDER=3
+# uint8 CONE=4
+
+popcorn_tabletop_objects:
+  pringles: # 134 gram
+    primitive_type: 3
+    dimension:
+      radius: 0.035
+      height: 0.235
+  pringles2: # 53 gram
+    primitive_type: 3
+    dimension:
+      radius: 0.035
+      height: 0.120
+  merlo_cup:
+    primitive_type: 3
+    dimension:
+      radius: 0.03
+      height: 0.135
+  bottle:
+    primitive_type: 3
+    dimension:
+      radius: 0.04
+      height: 0.23
+  tube:
+    primitive_type: 3
+    dimension:
+      radius: 0.0315
+      height: 0.135
+
+popcorn_tabletop_object_supports:
+  table:
+    primitive_type: 1
+    dimension:
+      box_x: 0.600
+      box_y: 1.200
+      box_z: 0.740

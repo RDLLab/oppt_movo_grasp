@@ -1,0 +1,3 @@
+ADD_TRANSITION_PLUGIN(movoGraspingTransitionPlugin ${CMAKE_CURRENT_LIST_DIR}/MovoGraspingTransitionPlugin.cpp)
+target_include_directories(movoGraspingTransitionPlugin PRIVATE ${CMAKE_SOURCE_DIR}/popcorn_oppt_ros_interface/src/MovoPlugins/shared)
+

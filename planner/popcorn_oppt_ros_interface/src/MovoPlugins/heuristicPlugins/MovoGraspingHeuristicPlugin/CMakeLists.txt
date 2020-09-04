@@ -1,0 +1,2 @@
+ADD_HEURISTIC_PLUGIN(movoGraspingHeuristicPlugin ${CMAKE_CURRENT_LIST_DIR}/MovoGraspingHeuristicPlugin.cpp)
+target_include_directories(movoGraspingHeuristicPlugin PRIVATE ${CMAKE_SOURCE_DIR}/popcorn_oppt_ros_interface/src/MovoPlugins/shared)

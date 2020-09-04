@@ -1,0 +1,4 @@
+oppt_ros_interface:
+  init_belief_action_name: '/oppt_ros_interface/init_belief'
+  plan_action_name: '/oppt_ros_interface/plan'
+  joint_position_control_tolerance: 0.01
