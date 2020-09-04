@@ -201,7 +201,7 @@ All licenses for this demo can be found at [LICENSES](Licenses).
 
 ## References
 <ol>
-<li>Marcus Hoerger, Joshua Song, Hanna Kurniawati, and Alberto Elfes. POMDP-based Candy Server: Lessons Learned from a Seven Day Demo. Proc. Int. Conference on Automated Planning and Scheduling (ICAPS). 2019.</li>
+<li>Marcus Hoerger, Joshua Song, Hanna Kurniawati, and Alberto Elfes. POMDP-based Candy Server: Lessons Learned from a Seven Day Demo. Proc. Int. Conference on Automated Planning and Scheduling (ICAPS). 2019. [<a href="http://rdl.cecs.anu.edu.au/papers/icaps19_demo.pdf">PDF</a>]</li>
 </ol>
 
 
